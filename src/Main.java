@@ -14,7 +14,7 @@ public class Main {
 
     private static int pontosJogador = 0;
     private static int pontosDealer = 0;
-    private static int saldoAtual = 500;
+    public static int saldoAtual = 50;
 
     public static BlackJack novoJogo = new BlackJack(jogo);
     private static boolean primeiraVez = true;

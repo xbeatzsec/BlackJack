@@ -92,7 +92,10 @@ public class BlackJack extends JComponent {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String[] apostasPossiveis = new String[]{"5", "10", "25", "50", "100"};
-
+                if (Main.saldoAtual <= 0) {
+                    JOptionPane.showMessageDialog(null, "Ficou sem dinheiro, vai ser desconectado :(","Banco", JOptionPane.INFORMATION_MESSAGE , dinheiroIcon);
+                    System.exit(0);
+                }
                 int aposta = JOptionPane.showOptionDialog(null, "Aposta a ser feita!", "Aposta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, dinheiroIcon, apostasPossiveis, apostasPossiveis[0]);
                 if (aposta == 0) {
                     valorAposta = 5;
@@ -121,7 +124,7 @@ public class BlackJack extends JComponent {
 
         botaoSair.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(frame, "Saiste do casino do Piaget com " + saldoAtual + " euros");
+                JOptionPane.showMessageDialog(frame, "Saiste do casino do Piaget com " + Main.saldoAtual + " euros");
                 System.exit(0);
             }
         });
