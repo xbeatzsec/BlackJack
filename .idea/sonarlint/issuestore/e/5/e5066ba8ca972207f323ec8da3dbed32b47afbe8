@@ -1,0 +1,8 @@
+
+S
+java:S1128"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8­ÂôÂë/
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(›Åk8­ÂôÂë/
+3
+java:S1700
+"Rename field "baralho"(¯„çË8­ÂôÂë/

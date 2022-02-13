@@ -1,0 +1,14 @@
+
+W
+java:S1161":Add the "@Override" annotation above this method signature(ç Ù8˜ÄôÂë/
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(õ¹¶±ùÿÿÿÿ8˜ÄôÂë/
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(³ï½Ü8˜ÄôÂë/
+E	java:S108")Either remove or fill this block of code.(á·¶ß8˜ÄôÂë/
+X
+java:S2696B"6Make the enclosing method "static" or remove this set.(ÈÚİ¼ÿÿÿÿÿ8˜ÄôÂë/
+s
+java:S1104"VMake piagetLogo a static final constant or non-public and provide accessors if needed.(ë•£¤8¨ÄôÂë/
+M
+java:S1444"0Make this "public static piagetLogo" field final(ë•£¤8¨ÄôÂë/
