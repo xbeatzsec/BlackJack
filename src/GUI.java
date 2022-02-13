@@ -63,8 +63,8 @@ public class GUI extends JComponent  {
         graphics2.drawString("Jogador: ",20, 150);
         graphics2.drawString(Integer.toString(pontosDealer),200, 100);
         graphics2.drawString(Integer.toString(pontosJogador),200, 150);
-        graphics2.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
-        graphics2.drawString("Saldo Atual: " + saldoAtual, 50, 570);
+        graphics2.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
+        graphics2.drawString("Saldo Atual: " + saldoAtual + " \u20ac", 900, 500);
 
 
         try {

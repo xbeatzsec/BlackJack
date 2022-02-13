@@ -36,7 +36,7 @@ public class Menu extends JComponent implements ActionListener {
         g2.drawString("Piaget | BlackJack", 380, 86);
 
         g2.setFont(new Font("Arial", Font.BOLD, 10));
-        g2.drawString("Elaborado por Hernani & Alex", 960, 580);
+        g2.drawString("Elaborado por Hernani & Alex", 930, 580);
 
         botaoJogar.setBounds(500, 300, 150, 80);
         botaoSair.setBounds(500, 400, 150, 80);
