@@ -10,13 +10,13 @@ import java.io.IOException;
 
 public class Main {
     public static JFrame menu = new JFrame();
-    public static JFrame game = new JFrame();
+    public static JFrame jogo = new JFrame();
 
     private static int pontosJogador = 0;
     private static int pontosDealer = 0;
     private static int saldoAtual = 500;
 
-    public static BlackJack novoJogo = new BlackJack(game);
+    public static BlackJack novoJogo = new BlackJack(jogo);
     private static boolean primeiraVez = true;
 
     public static enum ESTADO {
@@ -27,11 +27,11 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         if (currentState == ESTADO.MENU) {
-            abriMenu();
+            abrirMenu();
         }
     }
 
-    public static void abriMenu() {
+    public static void abrirMenu() {
         menu.setTitle("Piaget Casino");
         menu.setSize(1130, 665);
         menu.setLocationRelativeTo(null);
@@ -63,8 +63,8 @@ public class Main {
                         pontosJogador++;
                         saldoAtual += BlackJack.valorAposta;
                     }
-                    game.getContentPane().removeAll();
-                    novoJogo = new BlackJack(game);
+                    jogo.getContentPane().removeAll();
+                    novoJogo = new BlackJack(jogo);
                     novoJogo.inicioJogo();
                     primeiraVez = false;
                 }
